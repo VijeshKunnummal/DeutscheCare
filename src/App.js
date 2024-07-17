@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "./logo.svg";
-import "./App.css";
+import "./style/App.css";
 import { Caregiver } from "./components/Caregiver";
 import { Patient } from "./components/Patient";
 import { Header } from "./components/Header";
@@ -18,8 +18,8 @@ function App() {
         <Header />
         <div className="content">
           <Routes>
-            <Route exact path="/" component={ Caregiver } />
-            <Route path="/profile" component={ Patient } />
+            <Route path="/" component = { Caregiver } />
+            <Route path="/profile" component = { Patient } />
           </Routes>
         </div>
       </div>
