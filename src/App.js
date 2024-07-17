@@ -1,41 +1,24 @@
-import { useState } from "react";
+
 import logo from "./logo.svg";
 import "./style/App.css";
-import { Caregiver } from "./components/Caregiver";
-import { Patient } from "./components/Patient";
-import { Header } from "./components/Header";
-import { AddTask } from "./components/AddTask";
-import { ShowTask } from "./components/ShowTask";
+// import { Caregiver } from "./components/Caregiver";
+// import { Patient } from "./components/Patient";
+// import { Header } from "./components/Header";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { Task } from "./components/Task";
+
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import MyRouter from MyRouter
+import { MyRouter } from "./components/MyRouter";
+
 
 function App() {
-  const [tasklist, setTasklist] = useState([]);
-  const [task, setTask] = useState({});
+  // const [tasklist, setTasklist] = useState([]);
+  // const [task, setTask] = useState({});
   return (
-    <Router>
-      <div className="app">
-        <Header />
-        <div className="content">
-          <Routes>
-            <Route path="/" component = { Caregiver } />
-            <Route path="/profile" component = { Patient } />
-          </Routes>
-        </div>
-      </div>
-      <AddTask
-        tasklist={tasklist}
-        setTasklist={setTasklist}
-        task={task}
-        setTask={setTask}
-      />
-      <ShowTask
-        tasklist={tasklist}
-        setTasklist={setTasklist}
-        task={task}
-        setTask={setTask}
-      />
-    </Router>
+    <div className="app">
+      <MyRouter/>
+    </div>
   );
 }
 

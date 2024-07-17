@@ -9,4 +9,4 @@ export const Caregiver = () => {
   );
 }
 
-// export default Caregiver;
+export default Caregiver;

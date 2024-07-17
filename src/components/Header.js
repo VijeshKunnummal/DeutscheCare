@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import logo from "../assets/logo.svg";
 import '../style/Header.css';
+import Caregiver from "./Caregiver";
 
 
 export const Header = () => {
@@ -12,8 +13,7 @@ export const Header = () => {
         <span>DeutscheCare+ Planner</span>
       </span>
         <nav className="top-nav">
-          
-          <Link to="/" className="nav-button"> Home </Link>
+          <Link to="/home" className="nav-button"> Home </Link>
           <Link to="/profile" className="nav-button"> Profile </Link>
         </nav>
     </header>
