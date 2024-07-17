@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import logo from "../assets/logo.svg";
 import '../style/Header.css';
-import Caregiver from "./Caregiver";
-
 
 export const Header = () => {
   return (
