@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Patient } from "./Patient";
 import { Header } from "./Header";
-import Chat from "./Chat";
+import ChatPage from "./ChatPage";
 import { Task } from "./Task";
 
 export const MyRouter = () => {
@@ -13,7 +13,7 @@ export const MyRouter = () => {
               <Route index element={<Task/>} />
               <Route path="home" element={<Task />} />
               <Route path="profile" element={<Patient />} />
-              <Route path="chat" element={<Chat />} />
+              <Route path="chat" element={<ChatPage />} />
           </Routes>
         </div>
     </Router>

@@ -10,6 +10,7 @@ import "./style/App.css";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import MyRouter from MyRouter
 import { MyRouter } from "./components/MyRouter";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {

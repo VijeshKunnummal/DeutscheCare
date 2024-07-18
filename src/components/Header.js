@@ -12,7 +12,8 @@ export const Header = () => {
       </span>
         <nav className="top-nav">
           <Link to="/home" className="nav-button"> Home </Link>
-          <Link to="/profile" className="nav-button"> Profile </Link>
+          <Link to="/chat" className="nav-button"> Chat </Link>
+          <Link to="/profile" className="nav-button"> Profile </Link>          
         </nav>
     </header>
   );

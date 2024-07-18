@@ -8,13 +8,13 @@ const cors = require('cors');
 
 const socketIO = require('socket.io')(http, {
     cors: {
-      origin: "https://effective-space-fortnight-v6jj9vqv449hw7pr-3000.app.github.dev",
+      origin: "http://localhost:3000",
       // credentials: true
     }
 });
 
 app.use(cors({
-    origin: "https://effective-space-fortnight-v6jj9vqv449hw7pr-3000.app.github.dev"
+    origin: "http://localhost:3000"
   }));
 
 //Add this before the app.get() block

@@ -56,7 +56,7 @@ header .themeSelector .activeTheme{
   padding: 20px 15px;
   border-radius: 5px;
   background-color: #FFFFFF;
-  max-width: 500px;
+  max-width: 900px;
   margin: 20px auto;
   box-shadow: var(--box-shadow);
 }
